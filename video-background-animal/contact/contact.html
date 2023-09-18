@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Resposive Background Page</title>
+    <link rel = "stylesheet" href = "style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+
+</head>
+<body>
+    <!-- Header Start -->
+    <header class = "navbar-container">
+        <!-- Logo Name -->
+        <a href = "#" class = "navbar-container__brand" > Wild West </a>
+
+        <!-- Menu Button Start -->
+        <div class="navbar-container__menu-btn"></div>
+        <!-- Menu Button End -->
+        
+        <!-- Navigation Start -->
+        <div class = "navbar-container__navigation">
+            <!-- Navigation Items Start -->
+            <div class="navbar-container__navigation-items">
+                <a href = "../index.html"> Home </a>
+                <a href = "../about/about.html"> About </a>
+                <a href = "../explore/explore.html"> Explore </a>
+                <a href = "../gallery/gallery.html"> Gallery </a>
+                <a href = "#"> Contact </a>
+            </div>
+            <!-- Navigation Items End -->
+        </div>
+        <!-- Navigation End -->
+    </header>
+    <!-- Header End -->
+    <!-- Home Section Start -->
+    <section class = "home-section">
+        <!-- Video Background Start -->
+        <video src="../video/home.mp4" class="home-section__bg-video" autoplay muted loop></video>
+        <!-- Video Background End -->
+        <!-- Home Section Content Start -->
+        <div class = "home-section__content">
+            <h1>Contact Us</h1>
+            
+            <form class="form">
+                <p type="Name:">
+                    <input placeholder="Write your name here..">
+                </p>
+                <p type="Email:">
+                    <input placeholder="Let us know how to contact you back..">
+                </p>
+                <p type="Message:">
+                    <input placeholder="What would you like to tell us..">
+                </p>
+                <button>Send Message</button>
+                <div>
+                  <span class="fa fa-phone"></span>001 1023 567
+                  <span class="fa fa-envelope-o"></span> contact@company.com
+                </div>
+              </form>
+           
+        </div>
+        <!-- Home Section Content End -->
+        <!-- Home Section Content Media Icon Start -->
+        <div class = "home-section__media-icon">
+            <a href = "#"><i class = "fab fa-facebook-f"></i></a>
+            <a href = "#"><i class = "fab fa-instagram"></i></a>
+            <a href = "#"><i class = "fab fa-twitter"></i></a>
+
+        </div>
+        <!-- Home Section Content Media Icon End -->
+
+
+        <!-- Responsive Menu Logic Start -->
+        <script type = "text/javascript">
+            const menuBtn = document.querySelector(".navbar-container__menu-btn");
+            const navigation = document.querySelector(".navbar-container__navigation");
+
+
+            menuBtn.addEventListener("click", () =>{
+                menuBtn.classList.toggle("active");
+                navigation.classList.toggle("active");
+                }
+            );
+
+        </script>
+        <!-- Resposive Menu Logic End  -->
+
+    </section>
+    <!-- Home Section End -->
+</body>
+</html>
